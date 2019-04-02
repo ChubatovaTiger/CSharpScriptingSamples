@@ -1,13 +1,14 @@
-// no main class, no project, no main method
-// common usings are implicitly available
+// 1) no main class, no project, no main method
 
-// you can reference other libraries and files
+// 2) common usings are implicitly available
+
+// 3) you can reference other libraries and files
 #r "nuget:Newtonsoft.Json,12.0.1"
 #load "Fibonacci.csx"
 
 using Newtonsoft.Json;
 
-// you can access the host object
+// you can access the host object to pass in arguments
 var args = Args.FirstOrDefault();
 int n = 10;
 if (!string.IsNullOrEmpty(args)) {
