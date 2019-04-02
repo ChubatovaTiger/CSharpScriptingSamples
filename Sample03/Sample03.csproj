@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="2.10.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="script.csx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
